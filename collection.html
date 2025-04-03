@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logoimg.jpeg" alt="NFT T-Shirt Marketplace Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="shirt1.jpg" class="d-block" alt="NFT T-Shirt 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #1</h5>
+                        <p>Price: 0.05 ETH</p>
+                        <button onclick="purchaseNFT(1, 0.05)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt19.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(19, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt2.jpg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #3</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt3.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #4</h5>
+                        <p>Price: 0.07 ETH</p>
+                        <button onclick="purchaseNFT(3, 0.07)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt4.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #5</h5>
+                        <p>Price: 0.05 ETH</p>
+                        <button onclick="purchaseNFT(4, 0.05)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt5.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #6</h5>
+                        <p>Price: 0.03 ETH</p>
+                        <button onclick="purchaseNFT(5, 0.03)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt6.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #7</h5>
+                        <p>Price: 0.02 ETH</p>
+                        <button onclick="purchaseNFT(6, 0.02)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt7.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #8</h5>
+                        <p>Price: 0.01 ETH</p>
+                        <button onclick="purchaseNFT(7, 0.01)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt8.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #9</h5>
+                        <p>Price: 0.08 ETH</p>
+                        <button onclick="purchaseNFT(8, 0.08)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt9.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #10</h5>
+                        <p>Price: 0.07 ETH</p>
+                        <button onclick="purchaseNFT(9, 0.07)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt10.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #11</h5>
+                        <p>Price: 0.02 ETH</p>
+                        <button onclick="purchaseNFT(10, 0.02)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt11.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #12</h5>
+                        <p>Price: 0.03 ETH</p>
+                        <button onclick="purchaseNFT(11, 0.03)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt12.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #13</h5>
+                        <p>Price: 0.08 ETH</p>
+                        <button onclick="purchaseNFT(12, 0.08)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt13.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #14</h5>
+                        <p>Price: 0.09 ETH</p>
+                        <button onclick="purchaseNFT(13, 0.09)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt14.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #15</h5>
+                        <p>Price: 0.08 ETH</p>
+                        <button onclick="purchaseNFT(14, 0.08)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt15.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #3</h5>
+                        <p>Price: 0.06 ETH</p>
+                        <button onclick="purchaseNFT(15, 0.06)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt16.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #3</h5>
+                        <p>Price: 0.05 ETH</p>
+                        <button onclick="purchaseNFT(16, 0.05)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt17.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #3</h5>
+                        <p>Price: 0.08 ETH</p>
+                        <button onclick="purchaseNFT(17, 0.08)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt18.jpg" class="d-block" alt="NFT T-Shirt 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Limited Edition T-Shirt #3</h5>
+                        <p>Price: 0.03 ETH</p>
+                        <button onclick="purchaseNFT(18, 0.03)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt20.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt21.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt22.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt23.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shirt24.jpeg" class="d-block" alt="NFT T-Shirt 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Edition T-Shirt #2</h5>
+                        <p>Price: 0.04 ETH</p>
+                        <button onclick="purchaseNFT(2, 0.04)">Buy NFT</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NFT T-Shirt Marketplace. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

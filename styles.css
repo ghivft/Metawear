@@ -1,0 +1,292 @@
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+    padding-top: 50px;
+    background-color: #4B0082 ;
+   
+}
+
+
+.home {
+    padding: 80px;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    background-image: url('backgrimg1.jpeg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 60vh; /* Ensures a good height for the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Adjust text color for readability */
+    width: auto;
+}
+
+
+.about-us {
+    padding: 50px 10%; /* Increase padding for better spacing */
+    background-image: url('backgrimg2.jpeg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating patterns */
+    min-height: 100vh; /* Ensures a good height for the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Adjust text color for readability */
+    width: 100%; /* Ensures full width */
+    margin: 0; /* Removes unwanted margins */
+    box-sizing: border-box;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    max-width: 80%; /* Ensures text is not stretched across full width */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 30px;
+}
+
+.contact{
+    background-image: url('backgrimg3.jpeg');
+}
+
+.contact h2{
+    color: white;
+    margin-top: 50px;
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#9400D3;
+    color: white;
+    /* padding: 1em 2em; */
+    padding-top: 2px;
+   z-index: 1000;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.header-container nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    border-radius: 10%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.carousel img {
+    max-height: 600px;/* Adjust as needed */
+    width: auto;
+    margin: auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+/* Change carousel background */
+.carousel {
+    background-color: #222; /* Dark background */
+    flex-grow: 1;
+}
+.carousel h5{
+    color: blue;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: auto;
+}
+
+.carousel p{
+    color: blue;
+    font-size: 16px;
+}
+
+/* Style arrows to always be visible */
+.carousel-control-prev, 
+.carousel-control-next {
+    opacity: 1 !important;  /* Make arrows always visible */
+}
+
+/* Customize arrow background color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 15px;
+    border-radius: 50%; /* Makes arrows round */
+}
+
+/* Change arrow color to white */
+.carousel-control-prev-icon::after, 
+.carousel-control-next-icon::after {
+    filter: invert(1); /* Makes icons white */
+}
+
+/* Ensure arrows are not hidden on hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    padding-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 400px; /* Limit form width */
+    margin: auto; /* Center the form */
+}
+
+input, textarea {
+    width: 100%; /* Make all inputs full width */
+    margin-bottom: 10px; /* Add spacing between fields */
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px; /* Adjust the message box height */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #9400D3; /* Change color on hover */
+}
+
+
+
+footer {
+        background-color: #9400D3;
+        color: rgb(9, 9, 9);
+        text-align: center;
+        padding: 3px;
+        position: fixed;
+        width: 100%;
+        margin-top: auto;
+        bottom: 0;
+        left: 0;
+}
+
+footer p{
+    color: white;
+}
+
